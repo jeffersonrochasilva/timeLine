@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    
+    }
+    body, html {
+      display: flex;
+      justify-content: center;
+    }
+    .container{
+      margin-top: 200px;
+      padding-top: 100px;
+      width: 800px;
+      height: 200px;
+      background:#bad9fc;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .box1{
+      height: 5px;
+      width: 130px;
+      background: white;
+    }
+    .box2{
+      height: 5px;
+      width: 210px;
+      background: white;
+    }
+    .box3{
+      height: 5px;
+      width: 210px;
+      background: white;
+    }
+    .box4{
+      height: 5px;
+      width: 130px;
+      background: white;
+    }
+    .box{
+      width: 700px;
+      /* height: 200px; */
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .content{
+      position: relative;
+      bottom: 28px;
+      width: 700px;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .content1{
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+    .content2{
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    } 
+    .content3{
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+    </div>
+    <div class="content">
+      <div onclick="select1()" class="content1"><h1>A</h1></div>
+      <div onclick="select2()" class="content2"><h1>B</h1></div>
+      <div onclick="select3()" class="content3"><h1>C</h1></div>
+    </div>
+ 
+  </div>
+
+  <script>
+      const selectBox1 = window.document.querySelector('div.box1')
+      const selectBox2 = window.document.querySelector('div.box2')
+      const selectBox3 = window.document.querySelector('div.box3')
+      const selectBox4 = window.document.querySelector('div.box4')
+      const selectcontent1 = document.querySelector('.content1')
+      const selectcontent2 = document.querySelector('.content2')
+      const selectcontent3 = document.querySelector('.content3')
+
+    function select1() {
+      selectcontent1.style.background = '#87CEFA'
+      selectcontent2.style.background = 'white'
+      selectcontent3.style.background = 'white'
+      selectBox1.style.background = '#87CEFA'
+      selectBox2.style.background = 'white'
+      selectBox3.style.background = 'white'
+      selectBox4.style.background = 'white'
+    }
+    function select2() {
+      selectcontent1.style.background = '#87CEFA'
+      selectcontent2.style.background = '#87CEFA'
+      selectcontent3.style.background = 'white'
+      selectBox1.style.background = '#87CEFA'
+      selectBox2.style.background = '#87CEFA'
+      selectBox3.style.background = 'white'
+      selectBox4.style.background = 'white'
+    }
+    function select3() {
+      selectcontent1.style.background = '#87CEFA'
+      selectcontent2.style.background = '#87CEFA'
+      selectcontent3.style.background = '#87CEFA'
+      selectBox1.style.background = '#87CEFA'
+      selectBox2.style.background = '#87CEFA'
+      selectBox3.style.background = '#87CEFA'
+      selectBox4.style.background = '#87CEFA'
+    }
+  </script>
+
+</body>
+</html>
